@@ -16,6 +16,7 @@ class Volumen {
   public:
       Volumen(std::string nombre,int numVol);
       virtual void mostrar()=0;
+      virtual int cantidad()=0;
 
 };
 

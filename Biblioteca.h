@@ -7,6 +7,8 @@
 
 #include <vector>
 #include "Volumen.h"
+#include "Libro.h"
+#include "Revista.h"
 
 class Biblioteca {
 private:
@@ -18,6 +20,7 @@ public:
    Biblioteca();
    void mostrarBiblioteca();
    void incluir(Volumen* v);
+   void cantidad();
    ~Biblioteca()=default;
 
 };

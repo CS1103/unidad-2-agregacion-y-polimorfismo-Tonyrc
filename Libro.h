@@ -14,7 +14,9 @@ class Libro: public Volumen {
    public:
      Libro(std::string nombre,int numVol, int numLibros);
      void mostrar() override;
+     int cantidad() override{return numLibros;}
      ~Libro()=default;
+
 
 };
 

@@ -3,6 +3,7 @@
 //
 
 #include "Biblioteca.h"
+#include <typeinfo>
 
 Biblioteca::Biblioteca():maxLibros(0),maxRevistas(0){}
 
@@ -15,5 +16,15 @@ void Biblioteca::mostrarBiblioteca(){
         item->mostrar();
 }
 
-
+void Biblioteca::cantidad() {
+    for (auto item: Lista)
+    {
+        if(typeid(*item) == typeid(Libro))
+            maxLibros+=item->cantidad();
+        if (typeid(*item) == typeid(Revista))
+            maxRevistas+=item->cantidad();
+    }
+    std::cout <<"#Libros: "<<maxLibros<<"\n";
+    std::cout <<"#Revistas: "<<maxRevistas<<"\n";
+}
 

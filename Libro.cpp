@@ -7,5 +7,6 @@
 Libro::Libro(std::string nombre,int numVol,int numLibros): Volumen{nombre,numVol},numLibros{numLibros}{}
 
 void Libro::mostrar(){
-    std::cout<<"Volumen #:"<<numVol<<" ,numLibros :"<<numLibros<<" ,Titulo :"<<nombre<<"\n";
+    std::cout<<"VolumenL #:"<<numVol<<" ,numLibros :"<<numLibros<<" ,Titulo :"<<nombre<<"\n";
 }
+

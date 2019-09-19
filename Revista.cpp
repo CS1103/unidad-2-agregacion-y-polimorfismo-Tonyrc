@@ -7,5 +7,5 @@
 Revista::Revista(std::string nombre, int numVol, int numRevistas):Volumen{nombre,numVol},numRevistas{numRevistas}{}
 
 void Revista::mostrar(){
-    std::cout<<"Volumen #:"<<numVol<<" ,numRevistas :"<<numRevistas<<" ,Titulo :"<<nombre<<"\n";
+    std::cout<<"VolumenR #:"<<numVol<<" ,numRevistas :"<<numRevistas<<" ,Titulo :"<<nombre<<"\n";
 }

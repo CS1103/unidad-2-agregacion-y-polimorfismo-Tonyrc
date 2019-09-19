@@ -13,6 +13,8 @@ class Revista: public Volumen {
    public:
      Revista(std::string nombre, int numVol, int numRevistas);
      void mostrar() override;
+     int cantidad() override{return numRevistas;}
+     ~Revista()=default;
 
 };
 
